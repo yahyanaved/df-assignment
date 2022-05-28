@@ -13,7 +13,7 @@ def search(file):
         if(os.listdir(file)):
             arr=os.listdir(file)
             for i in arr:
-                check(file+'/'+entries)
+                search(file+'/'+entries)
     else:
         regex=re.compile(arg.r)
 	if(regex.search(file)):
